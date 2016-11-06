@@ -49,7 +49,7 @@
 
 void lyra2_hash(const char* input, char* output)
 {
-  LYRA2(output, 32, input, 80, "65538", 80, 2, 1 + 1, 256)
+  LYRA2(output, 32, input, 80, "65538", 80, 2, 1 + 1, 256);
 }
 
 int LYRA2( void *K, uint64_t kLen, const void *pwd, uint64_t pwdlen,
