@@ -46,6 +46,12 @@
  */
 
 // Lyra2RE & Lyra2REv2, nRows must be a power of 2
+
+void lyra2_hash(const char* input, char* output)
+{
+  LYRA2(output, 32, input, 80, "65538", 80, 2, 1 + 1, 256)
+}
+
 int LYRA2( void *K, uint64_t kLen, const void *pwd, uint64_t pwdlen,
            const void *salt, uint64_t saltlen, uint64_t timeCost,
            const uint64_t nRows, const uint64_t nCols )
