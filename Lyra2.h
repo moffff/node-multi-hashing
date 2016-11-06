@@ -1,5 +1,5 @@
-#ifndef LYRA2RE_H
-#define LYRA2RE_H
+#ifndef LYRA2_H
+#define LYRA2_H
 
 #include <stdint.h>
 
