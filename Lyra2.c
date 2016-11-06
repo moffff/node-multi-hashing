@@ -378,5 +378,5 @@ int LYRA2_old(void *K, uint64_t kLen, const void *pwd, uint64_t pwdlen, const vo
     free(state);
     //==========================================================================/
 
-    return 0;
+    /*return 0;*/
 }
