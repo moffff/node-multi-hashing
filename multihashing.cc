@@ -755,7 +755,7 @@ Handle<Value> lyra2(const Arguments& args) {
     char * input = Buffer::Data(target);
     char output[32];
 
-    lyra2_hash(input, output);
+    LYRA2(input, output);
 
    Buffer* buff = Buffer::New(output, 32);
     return scope.Close(buff->handle_);
