@@ -784,45 +784,45 @@ Handle<Value> lyra2(const Arguments& args) {
 
 
 
-Handle<Value> lyra2re(const Arguments& args) {
-   HandleScope scope;
+//Handle<Value> lyra2re(const Arguments& args) {
+   //HandleScope scope;
 
-    if (args.Length() < 1)
-        return except("You must provide one argument.");
+    //if (args.Length() < 1)
+        //return except("You must provide one argument.");
 
-    Local<Object> target = args[0]->ToObject();
+    //Local<Object> target = args[0]->ToObject();
 
-    if(!Buffer::HasInstance(target))
-        return except("Argument should be a buffer object.");
+    //if(!Buffer::HasInstance(target))
+        //return except("Argument should be a buffer object.");
 
-    char * input = Buffer::Data(target);
-    char output[32];
+    //char * input = Buffer::Data(target);
+    //char output[32];
 
-    lyra2re_hash(input, output);
+    //lyra2re_hash(input, output);
 
-   Buffer* buff = Buffer::New(output, 32);
-    return scope.Close(buff->handle_);
-}
+   //Buffer* buff = Buffer::New(output, 32);
+    //return scope.Close(buff->handle_);
+//}
 
-Handle<Value> lyra2re2(const Arguments& args){
- HandleScope scope;
+//Handle<Value> lyra2re2(const Arguments& args){
+ //HandleScope scope;
 
-    if (args.Length() < 1)
-        return except("You must provide one argument.");
+    //if (args.Length() < 1)
+        //return except("You must provide one argument.");
 
-    Local<Object> target = args[0]->ToObject();
+    //Local<Object> target = args[0]->ToObject();
 
-    if(!Buffer::HasInstance(target))
-        return except("Argument should be a buffer object.");
+    //if(!Buffer::HasInstance(target))
+        //return except("Argument should be a buffer object.");
 
-    char * input = Buffer::Data(target);
-    char output[32];
+    //char * input = Buffer::Data(target);
+    //char output[32];
 
-    lyra2re2_hash(input, output);
+    //lyra2re2_hash(input, output);
 
-   Buffer* buff = Buffer::New(output, 32);
-    return scope.Close(buff->handle_);
-}
+   //Buffer* buff = Buffer::New(output, 32);
+    //return scope.Close(buff->handle_);
+//}
 
 
 Handle<Value> zr5(const Arguments& args) {
