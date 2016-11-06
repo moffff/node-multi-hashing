@@ -23,7 +23,7 @@
 #include <time.h>
 #include "compat.h"
 #include "Lyra2.h"
-#include "sponge.h"
+#include "Sponge.h"
 
 /**
  * Executes Lyra2 based on the G function from Blake2b. This version supports salts and passwords
